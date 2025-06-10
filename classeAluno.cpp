@@ -33,17 +33,11 @@ public:
 };
 
 int main() {
-	//preenchendo um objeto (eu acho)
+	//preenchendo um objeto 
 	Estudante estudante1;
-	estudante1.nome = "Jovem Cefetiano";
+	estudante1.nome = "João Vitor";
 	estudante1.matricula = 123456;
 	estudante1.rendaMensalFamiliar = 3250.50;
 	estudante1.getIgd();
-
-	//atencao pra um erro meu na linha seguinte: esqueci de colocar () e tava dando erro, mais atencao na proxima vez!
 	cout << "Nome: " << estudante1.nome << "\nMatriula: " << estudante1.matricula << "\nIgd: " << estudante1.getIgd() << endl;
 }
-/*versao 1 : so tem a  funcao getIgd, funciona e retornou um valor estranho , mas eu acabei de perceber que foi por que
- * eu nao dei valor pra variavel rendaMensalFamiliar.
- * depois de colocar um valor para ela, correu tudo de acordo com os conformes :)
- */
